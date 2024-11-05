@@ -1,0 +1,44 @@
+ body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+        header {
+            background-color: #343a40;
+            color: #fff;
+            padding: 60px 0;
+            text-align: center;
+        }
+        header img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid #fff;
+            margin-bottom: 20px;
+        }
+        section {
+            padding: 60px 0;
+        }
+        .section-title {
+            position: relative;
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+        }
+        .section-title::after {
+            content: "";
+            width: 60px;
+            height: 4px;
+            background-color: #007bff;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+        footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .card-project {
+            margin-bottom: 30px;
+        }
