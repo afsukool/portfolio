@@ -3,122 +3,313 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Afsar Kuttiyassan - Portfolio</title>
+    <title>Afsar Kuttiyassan - IT Manager & Cybersecurity Professional</title>
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+        header {
+            background-color: #343a40;
+            color: #fff;
+            padding: 60px 0;
+            text-align: center;
+        }
+        header img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid #fff;
+            margin-bottom: 20px;
+        }
+        section {
+            padding: 60px 0;
+        }
+        .section-title {
+            position: relative;
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+        }
+        .section-title::after {
+            content: "";
+            width: 60px;
+            height: 4px;
+            background-color: #007bff;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+        footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .card-project {
+            margin-bottom: 30px;
+        }
+    </style>
 </head>
 <body>
 
-<div class="container my-5">
-    <header class="text-center mb-5">
-        <img src="profile.jpg" alt="Afsar Kuttiyassan" class="rounded-circle" width="150">
-        <h1>Afsar Kuttiyassan</h1>
-        <p class="lead">IT Engineer | Cybersecurity Enthusiast | Project Manager</p>
-        <p>Contact: <a href="mailto:afsu@outlook.com">afsu@outlook.com</a> | Abu Dhabi, UAE</p>
-        <a href="https://www.linkedin.com/in/afsar-kuttiyassan" target="_blank">LinkedIn</a> | 
-        <a href="https://afsukool.github.io/" target="_blank">Github</a>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <img src="profile.jpg" alt="Afsar Kuttiyassan">
+            <h1>Afsar Kuttiyassan</h1>
+            <p>IT Manager | Google Certified Cybersecurity Professional | IT Infrastructure Specialist</p>
+            <p>Abu Dhabi, UAE | <a href="mailto:afsu@outlook.com" class="text-white">afsu@outlook.com</a> | +971 543723470</p>
+            <a href="https://www.linkedin.com/in/afsar-kuttiyassan" target="_blank" class="text-white"><i class="fab fa-linkedin fa-2x"></i></a>
+            <a href="https://github.com/afsukool" target="_blank" class="text-white ml-3"><i class="fab fa-github fa-2x"></i></a>
+        </div>
     </header>
 
     <!-- About Section -->
     <section id="about">
-    <h2><i class="fas fa-user"></i> About Me</h2>
-        <p>Experienced IT Engineer focused on system administration and cybersecurity. Proficient in network management, troubleshooting, and aligning IT projects with business objectives. Passionate about enhancing IT efficiency and security within organizations.</p>
+        <div class="container">
+            <div class="section-title">
+                <h2><i class="fas fa-user"></i> About Me</h2>
+            </div>
+            <p>As an IT Engineer with a strong background in IT infrastructure and cybersecurity, I specialize in ensuring seamless IT operations and enhancing system efficiency. I have extensive experience supporting both educational institutions and businesses by managing their IT systems, troubleshooting issues, and implementing technology solutions that reduce downtime and improve productivity.</p>
+            <p>Certified as a Google Cybersecurity Professional, I excel in system administration, endpoint protection, and maintaining operational compliance with security protocols. My hands-on approach to problem-solving, combined with my ability to collaborate effectively with stakeholders, ensures successful project delivery. I am continuously seeking to take on new challenges, particularly in IT management roles where I can lead teams and drive technology transformation.</p>
+        </div>
     </section>
 
     <!-- Education Section -->
-   <section id="education" class="my-5">
-    <h2><i class="fas fa-graduation-cap"></i> Education</h2>
-    <ul class="list-group">
-        <li class="list-group-item">
-                <strong>Bachelor of Science in Electronics & Communication Systems</strong> - Bharathiar University, India (2005 - 2008)
-            </li>
-        </ul>
+    <section id="education">
+        <div class="container">
+            <div class="section-title">
+                <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+            </div>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <strong>Bachelor of Science in Electronics & Communication Systems</strong> - Bharathiar University, India (2005 - 2008)
+                </li>
+            </ul>
+        </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="my-5">
-    <h2><i class="fas fa-tools"></i> Skills</h2>
-    <div class="row">
-                <ul>
-                    <li><strong>System Administration:</strong> Windows & Linux OS, server setup</li>
-                    <li><strong>Network Management:</strong> DNS, DHCP, VPN, network troubleshooting</li>
-                    <li><strong>Cybersecurity:</strong> Threat analysis, vulnerability management</li>
-                </ul>
+    <section id="skills">
+        <div class="container">
+            <div class="section-title">
+                <h2><i class="fas fa-tools"></i> Skills</h2>
             </div>
-            <div class="col-md-6">
-                <ul>
-                    <li><strong>Project Management:</strong> Leading IT projects, resource allocation</li>
-                    <li><strong>Technical Support:</strong> Desktop support, user training</li>
-                    <li><strong>Programming:</strong> Python, HTML, CSS, PHP</li>
-                </ul>
+            <div class="row">
+                <div class="col-md-6">
+                    <ul>
+                        <li><strong>System Administration:</strong> Proficient in system setup, configuration, and administration of Windows and Linux environments.</li>
+                        <li><strong>Network Management:</strong> Skilled in managing secure and reliable network infrastructures, including DNS, DHCP, VPNs, and firewall configurations.</li>
+                        <li><strong>Cybersecurity:</strong> Expertise in threat analysis, vulnerability management, endpoint protection, and implementing security protocols.</li>
+                        <li><strong>Project Management:</strong> Experienced in leading IT projects, resource allocation, and aligning projects with organizational objectives.</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul>
+                        <li><strong>Technical Support:</strong> Provides comprehensive technical support, troubleshooting hardware/software issues, and ensuring smooth IT operations.</li>
+                        <li><strong>Programming & Scripting:</strong> Proficient in Python, PowerShell, HTML, CSS, and PHP for automation and web development.</li>
+                        <li><strong>Databases:</strong> Knowledgeable in database maintenance and management.</li>
+                        <li><strong>Security Audits:</strong> Conducts regular security audits and risk assessments to maintain compliance and enhance security measures.</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Experience Section -->
-   <section id="experience" class="my-5">
-    <h2><i class="fas fa-briefcase"></i> Professional Experience</h2>
-        <div class="card mb-4">
-            <div class="card-body">
-                <h5 class="card-title">Information Technology Engineer</h5>
-                <h6 class="card-subtitle mb-2 text-muted">TechSource Solutions - Bin Zayed Group, UAE (2023 - Present)</h6>
-                <ul>
-                    <li>Oversaw IT infrastructure, managing hardware and software installations, upgrades, and troubleshooting.</li>
-                    <li>Trained staff on cybersecurity, enhancing network security and compliance with best practices.</li>
-                    <li>Ensured system reliability, reducing system downtime by 20%.</li>
-                </ul>
+    <!-- Professional Experience Section -->
+    <section id="experience">
+        <div class="container">
+            <div class="section-title">
+                <h2><i class="fas fa-briefcase"></i> Professional Experience</h2>
             </div>
-        </div>
-        <div class="card mb-4">
-            <div class="card-body">
-                <h5 class="card-title">IT Project Manager</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Blacktrix Electronics, Dubai, UAE (2021 - 2022)</h6>
-                <ul>
-                    <li>Managed IT projects involving infrastructure upgrades and system migrations.</li>
-                    <li>Collaborated with vendors for resource procurement, ensuring project milestones were met.</li>
-                </ul>
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Information Technology Engineer</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">TechSource Solutions - Bin Zayed Group, UAE (August 2023 - Present)</h6>
+                    <ul>
+                        <li>Oversee IT infrastructure, ensuring the smooth operation of systems and timely resolution of technical issues.</li>
+                        <li>Collaborate with stakeholders to align IT services with operational needs, including server management, system updates, and user support.</li>
+                        <li>Managed day-to-day IT infrastructure and user support for a team of over 300 staff, ensuring 99% system uptime.</li>
+                        <li>Spearheaded a hardware upgrade project, improving system performance and reducing support requests by 15%.</li>
+                        <li>Trained end-users on cybersecurity best practices, resulting in a 25% reduction in phishing incidents.</li>
+                        <li>Implemented IT security protocols, including regular security updates and endpoint protection, to safeguard sensitive information.</li>
+                        <li>Monitored and maintained network connectivity, ensuring minimal downtime and reliable internet access for students and staff.</li>
+                        <li>Documented IT procedures, troubleshooting guides, and workflows to standardize processes across the IT operations.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Information Technology Project Manager</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">BlackTrix Electronics, Dubai, UAE (April 2021 - December 2022)</h6>
+                    <ul>
+                        <li>Led IT projects involving infrastructure upgrades, server installations, and system migrations.</li>
+                        <li>Managed teams and coordinated with external vendors to deliver projects on time and within budget.</li>
+                        <li>Conducted regular system audits and maintenance to ensure compliance with operational and security standards.</li>
+                        <li>Facilitated cross-functional collaboration to achieve project milestones efficiently.</li>
+                        <li>Implemented project management best practices, enhancing workflow efficiency and team productivity.</li>
+                        <li>Developed comprehensive project documentation, including timelines, progress reports, and final evaluations.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">IT Consultant</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">SCI-TECH-SOLUTIONS, LLC, UAE (October 2016 - December 2022)</h6>
+                    <ul>
+                        <li>Provided technical consulting to businesses, offering solutions for IT infrastructure upgrades and system optimizations.</li>
+                        <li>Implemented data backup solutions and performed server migrations to enhance operational continuity.</li>
+                        <li>Assisted clients in troubleshooting and resolving critical system issues, improving overall performance and reliability.</li>
+                        <li>Conducted security assessments and recommended mitigation strategies to protect client data.</li>
+                        <li>Optimized IT processes to increase efficiency and reduce operational costs.</li>
+                        <li>Developed and maintained strong client relationships through effective communication and support.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Customer Development Executive - FMCG</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Mars, UAE (April 2014 - June 2021)</h6>
+                    <ul>
+                        <li>Developed and executed sales strategies to increase product market share.</li>
+                        <li>Managed client relationships and ensured customer satisfaction through effective communication and support.</li>
+                        <li>Analyzed market trends to identify opportunities for growth and expansion.</li>
+                        <li>Coordinated with marketing and product teams to align sales strategies with business objectives.</li>
+                        <li>Achieved and exceeded sales targets consistently over the tenure.</li>
+                        <li>Trained and mentored new sales team members, enhancing overall team performance.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Project Manager - LV, LC Systems</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Osool Information Technology, Sharjah Emirate, UAE (April 2009 - April 2014)</h6>
+                    <ul>
+                        <li>Managed IT infrastructure and support for corporate clients, ensuring optimal performance and security.</li>
+                        <li>Implemented and maintained network security protocols to protect client data.</li>
+                        <li>Provided technical support and training to end-users, enhancing their IT proficiency.</li>
+                        <li>Coordinated with vendors for hardware and software procurement, optimizing resource allocation.</li>
+                        <li>Developed IT strategies aligned with client business goals, driving technology transformation.</li>
+                        <li>Conducted system audits and implemented improvements to maintain compliance with industry standards.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Sales Executive</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Bharati Airtel Ltd, Kannur, Kerala, India (March 2008 - February 2009)</h6>
+                    <ul>
+                        <li>Managed sales operations and customer relationships to drive product sales.</li>
+                        <li>Implemented sales strategies to achieve monthly and quarterly targets.</li>
+                        <li>Conducted market research to identify new sales opportunities.</li>
+                        <li>Provided exceptional customer service, resolving queries and ensuring customer satisfaction.</li>
+                        <li>Trained new sales team members, fostering a collaborative and high-performing sales environment.</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="my-5">
-    <h2><i class="fas fa-project-diagram"></i> Projects</h2>
-    <div class="row">
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Network Security Project</h5>
-                        <p class="card-text">Developed a secure network setup with VPNs and firewalls.</p>
-                        <a href="https://github.com/afsukool/network-security" class="btn btn-primary" target="_blank">View on GitHub</a>
-                    </div>
-                </div>
+    <section id="projects">
+        <div class="container">
+            <div class="section-title">
+                <h2><i class="fas fa-project-diagram"></i> Projects</h2>
             </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Wireless Security Toolkit</h5>
-                        <p class="card-text">Created a toolkit using Aircrack-ng and Wireshark for network analysis.</p>
-                        <a href="https://github.com/afsukool/wireless-security-toolkit" class="btn btn-primary" target="_blank">View on GitHub</a>
+            <div class="row">
+                <!-- Project 1 -->
+                <div class="col-md-4">
+                    <div class="card card-project">
+                        <div class="card-body">
+                            <h5 class="card-title">Network Security Project</h5>
+                            <p class="card-text">Developed a comprehensive network security setup incorporating VPNs, firewalls, and intrusion detection systems to protect organizational data.</p>
+                            <a href="https://github.com/afsukool/network-security" class="btn btn-primary" target="_blank">View on GitHub</a>
+                        </div>
                     </div>
                 </div>
+                <!-- Project 2 -->
+                <div class="col-md-4">
+                    <div class="card card-project">
+                        <div class="card-body">
+                            <h5 class="card-title">Wireless Security Toolkit</h5>
+                            <p class="card-text">Created a toolkit using Aircrack-ng and Wireshark for securing wireless networks and conducting network traffic analysis.</p>
+                            <a href="https://github.com/afsukool/wireless-security-toolkit" class="btn btn-primary" target="_blank">View on GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="col-md-4">
+                    <div class="card card-project">
+                        <div class="card-body">
+                            <h5 class="card-title">Mail Exchange Server Project</h5>
+                            <p class="card-text">Implemented a Zimbra-based email server on Ubuntu to facilitate secure and reliable communication for clients.</p>
+                            <a href="https://github.com/afsukool/mail-exchange-server" class="btn btn-primary" target="_blank">View on GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more project cards as needed -->
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-   <section id="contact" class="my-5">
-    <h2><i class="fas fa-envelope"></i> Contact</h2>
-        <p>Reach out via <a href="mailto:afsu@outlook.com">email</a> or connect on <a href="https://www.linkedin.com/in/afsar-kuttiyassan" target="_blank">LinkedIn</a>.</p>
+    <!-- Certifications Section -->
+    <section id="certifications">
+        <div class="container">
+            <div class="section-title">
+                <h2><i class="fas fa-certificate"></i> Certifications</h2>
+            </div>
+            <ul class="list-group">
+                <li class="list-group-item">How to Make Strategic Thinking a Habit</li>
+                <li class="list-group-item">Microsoft Certified Systems Engineer (MCSE)</li>
+                <li class="list-group-item">Driving License</li>
+                <li class="list-group-item">Responsive Web Design</li>
+                <li class="list-group-item">Fundamentals of Digital Marketing</li>
+            </ul>
+        </div>
     </section>
 
-    <footer class="text-center mt-5">
-        <p>&copy; 2024 Afsar Kuttiyassan</p>
-    </footer>
-</div>
+    <!-- Languages Section -->
+    <section id="languages">
+        <div class="container">
+            <div class="section-title">
+                <h2><i class="fas fa-language"></i> Languages</h2>
+            </div>
+            <ul class="list-group">
+                <li class="list-group-item"><strong>English:</strong> Full Professional</li>
+                <li class="list-group-item"><strong>Urdu:</strong> Professional Working</li>
+                <li class="list-group-item"><strong>Tamil:</strong> Limited Working</li>
+                <li class="list-group-item"><strong>Hindi:</strong> Full Professional</li>
+                <li class="list-group-item"><strong>Arabic:</strong> Elementary</li>
+                <li class="list-group-item"><strong>Malayalam:</strong> Native or Bilingual</li>
+            </ul>
+        </div>
+    </section>
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2><i class="fas fa-envelope"></i> Contact</h2>
+            </div>
+            <p>Feel free to reach out via <a href="mailto:afsu@outlook.com">email</a> or connect with me on <a href="https://www.linkedin.com/in/afsar-kuttiyassan" target="_blank">LinkedIn</a> for any professional inquiries or collaborations.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Afsar Kuttiyassan</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
